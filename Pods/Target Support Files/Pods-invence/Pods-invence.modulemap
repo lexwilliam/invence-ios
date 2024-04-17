@@ -1,0 +1,6 @@
+framework module Pods_invence {
+  umbrella header "Pods-invence-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54EDAC3BE0902F0FF3389281 /* Pods_invence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86035883E5A40897519D153A /* Pods_invence.framework */; };
+		D8B688450463DB98227E0595 /* Pods_invenceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59554183DEB24942EF16C780 /* Pods_invenceTests.framework */; };
+		FA29314A2BC44C3B00C68BF2 /* UserDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2931492BC44C3B00C68BF2 /* UserDto.swift */; };
+		FA2931532BC4537D00C68BF2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2931522BC4537D00C68BF2 /* User.swift */; };
+		FA2931582BC453E800C68BF2 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2931572BC453E800C68BF2 /* UserRepository.swift */; };
+		FA29315B2BC4547C00C68BF2 /* ProductCategoryDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29315A2BC4547C00C68BF2 /* ProductCategoryDto.swift */; };
+		FA29315F2BC4549300C68BF2 /* ProductDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29315E2BC4549300C68BF2 /* ProductDto.swift */; };
+		FA2931612BC4549A00C68BF2 /* ProductItemDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2931602BC4549A00C68BF2 /* ProductItemDto.swift */; };
+		FA7D08FD2BCCF4180057ED3E /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D08FC2BCCF4180057ED3E /* ViewUtils.swift */; };
+		FA7D09002BCCFA930057ED3E /* FirebaseAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D08FF2BCCFA930057ED3E /* FirebaseAuthenticationManager.swift */; };
+		FA7D09042BCD12310057ED3E /* ObserveUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D09032BCD12310057ED3E /* ObserveUserUseCase.swift */; };
+		FA7D09062BCD371E0057ED3E /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D09052BCD371E0057ED3E /* AppViewModel.swift */; };
+		FA7D09092BCD71980057ED3E /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D09082BCD71970057ED3E /* Dependency.swift */; };
+		FA7D090B2BCD71B50057ED3E /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D090A2BCD71B50057ED3E /* DependencyContainer.swift */; };
+		FA7D090E2BCD71CE0057ED3E /* FeatureInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D090D2BCD71CE0057ED3E /* FeatureInjector.swift */; };
+		FA7D09112BCD71DF0057ED3E /* ContentInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D09102BCD71DF0057ED3E /* ContentInjector.swift */; };
+		FA7D09132BCD831B0057ED3E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D09122BCD831B0057ED3E /* HomeViewModel.swift */; };
+		FA7D09152BCD83D60057ED3E /* LogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D09142BCD83D60057ED3E /* LogRepository.swift */; };
+		FA7D09172BCD83EB0057ED3E /* ObserveLogUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D09162BCD83EB0057ED3E /* ObserveLogUseCase.swift */; };
+		FA7D091C2BCD85CD0057ED3E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D091B2BCD85CD0057ED3E /* Log.swift */; };
+		FA7D091E2BCD86A60057ED3E /* TransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D091D2BCD86A60057ED3E /* TransactionRepository.swift */; };
+		FA7D09232BCD86D10057ED3E /* ObserveTransactionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D09222BCD86D10057ED3E /* ObserveTransactionUseCase.swift */; };
+		FA9D5B0B2BCF9B44002DEFAA /* FirestoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D5B0A2BCF9B44002DEFAA /* FirestoreConfig.swift */; };
+		FA9D5B102BCFA9EC002DEFAA /* ObserveCompanyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D5B0F2BCFA9EC002DEFAA /* ObserveCompanyUseCase.swift */; };
+		FA9D5B122BCFB4BB002DEFAA /* FirestoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D5B112BCFB4BB002DEFAA /* FirestoreError.swift */; };
+		FA9D5B142BCFB5ED002DEFAA /* UpsertUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D5B132BCFB5ED002DEFAA /* UpsertUserUseCase.swift */; };
+		FA9D5B182BCFBBED002DEFAA /* SelectBranchSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D5B172BCFBBED002DEFAA /* SelectBranchSheet.swift */; };
+		FA9D5B1A2BCFC125002DEFAA /* ObserveUserBranchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D5B192BCFC125002DEFAA /* ObserveUserBranchUseCase.swift */; };
+		FA9D5B202BCFD345002DEFAA /* CodableFirebaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D5B1F2BCFD345002DEFAA /* CodableFirebaseExtensions.swift */; };
+		FAC1C5052BC521E9005A788E /* TransactionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5042BC521E9005A788E /* TransactionDto.swift */; };
+		FAC1C50A2BC5223A005A788E /* OrderGroupDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5092BC5223A005A788E /* OrderGroupDto.swift */; };
+		FAC1C50C2BC52243005A788E /* OrderDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C50B2BC52243005A788E /* OrderDto.swift */; };
+		FAC1C50E2BC5225C005A788E /* OrderItemDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C50D2BC5225C005A788E /* OrderItemDto.swift */; };
+		FAC1C5102BC52477005A788E /* OrderDiscountDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C50F2BC52477005A788E /* OrderDiscountDto.swift */; };
+		FAC1C5122BC52480005A788E /* OrderTaxDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5112BC52480005A788E /* OrderTaxDto.swift */; };
+		FAC1C5172BC52799005A788E /* LogAddDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5162BC52799005A788E /* LogAddDto.swift */; };
+		FAC1C5192BC527A5005A788E /* LogUpdateDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5182BC527A5005A788E /* LogUpdateDto.swift */; };
+		FAC1C51B2BC527B4005A788E /* LogDeleteDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C51A2BC527B4005A788E /* LogDeleteDto.swift */; };
+		FAC1C51D2BC527C3005A788E /* LogSellDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C51C2BC527C3005A788E /* LogSellDto.swift */; };
+		FAC1C51F2BC527CC005A788E /* LogRestockDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C51E2BC527CC005A788E /* LogRestockDto.swift */; };
+		FAC1C5212BC527E0005A788E /* EmployeeShiftDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5202BC527E0005A788E /* EmployeeShiftDto.swift */; };
+		FAC1C5232BC527E9005A788E /* BranchDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5222BC527E9005A788E /* BranchDto.swift */; };
+		FAC1C5282BC52882005A788E /* FirebaseUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5272BC52882005A788E /* FirebaseUserRepository.swift */; };
+		FAC1C52A2BC528DC005A788E /* PaymentDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5292BC528DC005A788E /* PaymentDto.swift */; };
+		FAC1C52C2BC528F0005A788E /* PaymentMethodDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C52B2BC528F0005A788E /* PaymentMethodDto.swift */; };
+		FAC1C52E2BC528F9005A788E /* PaymentMethodFeeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C52D2BC528F9005A788E /* PaymentMethodFeeDto.swift */; };
+		FAC1C5302BC52903005A788E /* TransactionFeeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C52F2BC52903005A788E /* TransactionFeeDto.swift */; };
+		FAC1C5322BC5290C005A788E /* RefundDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5312BC5290C005A788E /* RefundDto.swift */; };
+		FAC1C5342BC52CE5005A788E /* BranchPaymentMethodDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5332BC52CE5005A788E /* BranchPaymentMethodDto.swift */; };
+		FAC1C5362BC52CED005A788E /* BranchPaymentMethodFeeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5352BC52CED005A788E /* BranchPaymentMethodFeeDto.swift */; };
+		FAC1C5382BC53236005A788E /* CompanyDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5372BC53236005A788E /* CompanyDto.swift */; };
+		FAC1C53A2BC5323F005A788E /* CompanyBranchDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5392BC5323F005A788E /* CompanyBranchDto.swift */; };
+		FAC1C53D2BC539B1005A788E /* OrderGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C53C2BC539B1005A788E /* OrderGroup.swift */; };
+		FAC1C53F2BC539B8005A788E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C53E2BC539B8005A788E /* Order.swift */; };
+		FAC1C5412BC539C1005A788E /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5402BC539C1005A788E /* OrderItem.swift */; };
+		FAC1C5432BC539CE005A788E /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5422BC539CE005A788E /* ProductCategory.swift */; };
+		FAC1C5452BC539D5005A788E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5442BC539D5005A788E /* Product.swift */; };
+		FAC1C5472BC539DB005A788E /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5462BC539DB005A788E /* ProductItem.swift */; };
+		FAC1C54A2BC53A03005A788E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5492BC53A03005A788E /* Transaction.swift */; };
+		FAC1C54C2BC53A0A005A788E /* TransactionFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C54B2BC53A0A005A788E /* TransactionFee.swift */; };
+		FAC1C54E2BC53A15005A788E /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C54D2BC53A15005A788E /* Payment.swift */; };
+		FAC1C5502BC53A1D005A788E /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C54F2BC53A1D005A788E /* PaymentMethod.swift */; };
+		FAC1C5522BC53A25005A788E /* PaymentMethodFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5512BC53A25005A788E /* PaymentMethodFee.swift */; };
+		FAC1C5542BC53A2D005A788E /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5532BC53A2D005A788E /* Branch.swift */; };
+		FAC1C5562BC53A37005A788E /* BranchPaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5552BC53A37005A788E /* BranchPaymentMethod.swift */; };
+		FAC1C5582BC53A3F005A788E /* BranchPaymentMethodFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5572BC53A3F005A788E /* BranchPaymentMethodFee.swift */; };
+		FAC1C55A2BC53A58005A788E /* EmployeeShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5592BC53A58005A788E /* EmployeeShift.swift */; };
+		FAC1C55C2BC53A5F005A788E /* LogAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C55B2BC53A5F005A788E /* LogAdd.swift */; };
+		FAC1C55E2BC53A65005A788E /* LogUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C55D2BC53A65005A788E /* LogUpdate.swift */; };
+		FAC1C5602BC53A6C005A788E /* LogDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C55F2BC53A6C005A788E /* LogDelete.swift */; };
+		FAC1C5622BC53A77005A788E /* LogSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5612BC53A77005A788E /* LogSell.swift */; };
+		FAC1C5642BC53A7E005A788E /* LogRestock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5632BC53A7E005A788E /* LogRestock.swift */; };
+		FAC1C5662BC53B37005A788E /* OrderDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5652BC53B37005A788E /* OrderDiscount.swift */; };
+		FAC1C5682BC53B3F005A788E /* OrderTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C5672BC53B3F005A788E /* OrderTax.swift */; };
+		FAC1C56B2BC53C8E005A788E /* OrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1C56A2BC53C8E005A788E /* OrderRepository.swift */; };
+		FAC4C3652BCEE0AB00E01596 /* CompanySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4C3642BCEE0AB00E01596 /* CompanySearchViewModel.swift */; };
+		FAC4C36A2BCEE5D200E01596 /* BranchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4C3692BCEE5D200E01596 /* BranchRepository.swift */; };
+		FAC4C36D2BCEE63700E01596 /* FirebaseBranchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4C36C2BCEE63700E01596 /* FirebaseBranchRepository.swift */; };
+		FAD20F802B6A6048009880A3 /* InvenceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD20F7F2B6A6048009880A3 /* InvenceApp.swift */; };
+		FAD20F822B6A6048009880A3 /* RootNavGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD20F812B6A6048009880A3 /* RootNavGraph.swift */; };
+		FAD20F842B6A6049009880A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD20F832B6A6049009880A3 /* Assets.xcassets */; };
+		FAD20F872B6A6049009880A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD20F862B6A6049009880A3 /* Preview Assets.xcassets */; };
+		FAD20F912B6A6049009880A3 /* invenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD20F902B6A6049009880A3 /* invenceTests.swift */; };
+		FAD20F9B2B6A6049009880A3 /* invenceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD20F9A2B6A6049009880A3 /* invenceUITests.swift */; };
+		FAD20F9D2B6A6049009880A3 /* invenceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD20F9C2B6A6049009880A3 /* invenceUITestsLaunchTests.swift */; };
+		FAE9B6492BCC363C0070D50F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9B6482BCC363C0070D50F /* AppDelegate.swift */; };
+		FAE9B64B2BCC38160070D50F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9B64A2BCC38160070D50F /* LoginViewModel.swift */; };
+		FAEAEFEE2BC65C7400843567 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEAEFED2BC65C7400843567 /* Company.swift */; };
+		FAEAEFF02BC65C7F00843567 /* CompanyBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEAEFEF2BC65C7F00843567 /* CompanyBranch.swift */; };
+		FAEAEFF22BC65D3F00843567 /* Refund.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEAEFF12BC65D3F00843567 /* Refund.swift */; };
+		FAFCF68D2BC7B1470064CD4E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCF68C2BC7B1470064CD4E /* HomeView.swift */; };
+		FAFCF6902BC7B2910064CD4E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCF68F2BC7B2910064CD4E /* LoginView.swift */; };
+		FAFCF6932BC7B33B0064CD4E /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCF6922BC7B33B0064CD4E /* InventoryView.swift */; };
+		FAFCF6962BC7C0F90064CD4E /* CompanySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCF6952BC7C0F90064CD4E /* CompanySearchView.swift */; };
+		FAFCF6982BC7C1020064CD4E /* CompanyOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCF6972BC7C1020064CD4E /* CompanyOnboardingView.swift */; };
+		FAFCF69B2BC7D97A0064CD4E /* InvencePrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCF69A2BC7D97A0064CD4E /* InvencePrimaryButton.swift */; };
+		FAFCF69D2BC7DB710064CD4E /* InvenceSecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCF69C2BC7DB710064CD4E /* InvenceSecondaryButton.swift */; };
+		FAFCF69F2BC818880064CD4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAFCF69E2BC818880064CD4E /* GoogleService-Info.plist */; };
+		FEC5C6E6220936355395E6F2 /* Pods_invence_invenceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7CF6EF773119615DDA1EFD /* Pods_invence_invenceUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAD20F8D2B6A6049009880A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD20F742B6A6048009880A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD20F7B2B6A6048009880A3;
+			remoteInfo = invence;
+		};
+		FAD20F972B6A6049009880A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD20F742B6A6048009880A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD20F7B2B6A6048009880A3;
+			remoteInfo = invence;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0522169BA3B0B8DC117B85AC /* Pods-invenceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-invenceTests.debug.xcconfig"; path = "Target Support Files/Pods-invenceTests/Pods-invenceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		538224AC826AE6D079B52A58 /* Pods-invence-invenceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-invence-invenceUITests.release.xcconfig"; path = "Target Support Files/Pods-invence-invenceUITests/Pods-invence-invenceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		59554183DEB24942EF16C780 /* Pods_invenceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_invenceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6D4C2F667BD7FED7EC8DE5 /* Pods-invence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-invence.debug.xcconfig"; path = "Target Support Files/Pods-invence/Pods-invence.debug.xcconfig"; sourceTree = "<group>"; };
+		6C7CF6EF773119615DDA1EFD /* Pods_invence_invenceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_invence_invenceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86035883E5A40897519D153A /* Pods_invence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_invence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		924D605339997AB85DC8F001 /* Pods-invence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-invence.release.xcconfig"; path = "Target Support Files/Pods-invence/Pods-invence.release.xcconfig"; sourceTree = "<group>"; };
+		BBC8B8E00E0D1DAC071FB5C6 /* Pods-invenceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-invenceTests.release.xcconfig"; path = "Target Support Files/Pods-invenceTests/Pods-invenceTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA2931492BC44C3B00C68BF2 /* UserDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDto.swift; sourceTree = "<group>"; };
+		FA2931522BC4537D00C68BF2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA2931572BC453E800C68BF2 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		FA29315A2BC4547C00C68BF2 /* ProductCategoryDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryDto.swift; sourceTree = "<group>"; };
+		FA29315E2BC4549300C68BF2 /* ProductDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDto.swift; sourceTree = "<group>"; };
+		FA2931602BC4549A00C68BF2 /* ProductItemDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemDto.swift; sourceTree = "<group>"; };
+		FA7D08FA2BCCF08E0057ED3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA7D08FC2BCCF4180057ED3E /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		FA7D08FF2BCCFA930057ED3E /* FirebaseAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationManager.swift; sourceTree = "<group>"; };
+		FA7D09032BCD12310057ED3E /* ObserveUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveUserUseCase.swift; sourceTree = "<group>"; };
+		FA7D09052BCD371E0057ED3E /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		FA7D09082BCD71970057ED3E /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
+		FA7D090A2BCD71B50057ED3E /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		FA7D090D2BCD71CE0057ED3E /* FeatureInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureInjector.swift; sourceTree = "<group>"; };
+		FA7D09102BCD71DF0057ED3E /* ContentInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentInjector.swift; sourceTree = "<group>"; };
+		FA7D09122BCD831B0057ED3E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FA7D09142BCD83D60057ED3E /* LogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRepository.swift; sourceTree = "<group>"; };
+		FA7D09162BCD83EB0057ED3E /* ObserveLogUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveLogUseCase.swift; sourceTree = "<group>"; };
+		FA7D091B2BCD85CD0057ED3E /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		FA7D091D2BCD86A60057ED3E /* TransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepository.swift; sourceTree = "<group>"; };
+		FA7D09222BCD86D10057ED3E /* ObserveTransactionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveTransactionUseCase.swift; sourceTree = "<group>"; };
+		FA9D5B0A2BCF9B44002DEFAA /* FirestoreConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreConfig.swift; sourceTree = "<group>"; };
+		FA9D5B0F2BCFA9EC002DEFAA /* ObserveCompanyUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveCompanyUseCase.swift; sourceTree = "<group>"; };
+		FA9D5B112BCFB4BB002DEFAA /* FirestoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreError.swift; sourceTree = "<group>"; };
+		FA9D5B132BCFB5ED002DEFAA /* UpsertUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpsertUserUseCase.swift; sourceTree = "<group>"; };
+		FA9D5B172BCFBBED002DEFAA /* SelectBranchSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBranchSheet.swift; sourceTree = "<group>"; };
+		FA9D5B192BCFC125002DEFAA /* ObserveUserBranchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveUserBranchUseCase.swift; sourceTree = "<group>"; };
+		FA9D5B1F2BCFD345002DEFAA /* CodableFirebaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFirebaseExtensions.swift; sourceTree = "<group>"; };
+		FAC1C5042BC521E9005A788E /* TransactionDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDto.swift; sourceTree = "<group>"; };
+		FAC1C5092BC5223A005A788E /* OrderGroupDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderGroupDto.swift; sourceTree = "<group>"; };
+		FAC1C50B2BC52243005A788E /* OrderDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDto.swift; sourceTree = "<group>"; };
+		FAC1C50D2BC5225C005A788E /* OrderItemDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemDto.swift; sourceTree = "<group>"; };
+		FAC1C50F2BC52477005A788E /* OrderDiscountDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDiscountDto.swift; sourceTree = "<group>"; };
+		FAC1C5112BC52480005A788E /* OrderTaxDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTaxDto.swift; sourceTree = "<group>"; };
+		FAC1C5162BC52799005A788E /* LogAddDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogAddDto.swift; sourceTree = "<group>"; };
+		FAC1C5182BC527A5005A788E /* LogUpdateDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUpdateDto.swift; sourceTree = "<group>"; };
+		FAC1C51A2BC527B4005A788E /* LogDeleteDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDeleteDto.swift; sourceTree = "<group>"; };
+		FAC1C51C2BC527C3005A788E /* LogSellDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSellDto.swift; sourceTree = "<group>"; };
+		FAC1C51E2BC527CC005A788E /* LogRestockDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRestockDto.swift; sourceTree = "<group>"; };
+		FAC1C5202BC527E0005A788E /* EmployeeShiftDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeShiftDto.swift; sourceTree = "<group>"; };
+		FAC1C5222BC527E9005A788E /* BranchDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchDto.swift; sourceTree = "<group>"; };
+		FAC1C5272BC52882005A788E /* FirebaseUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserRepository.swift; sourceTree = "<group>"; };
+		FAC1C5292BC528DC005A788E /* PaymentDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDto.swift; sourceTree = "<group>"; };
+		FAC1C52B2BC528F0005A788E /* PaymentMethodDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodDto.swift; sourceTree = "<group>"; };
+		FAC1C52D2BC528F9005A788E /* PaymentMethodFeeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodFeeDto.swift; sourceTree = "<group>"; };
+		FAC1C52F2BC52903005A788E /* TransactionFeeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFeeDto.swift; sourceTree = "<group>"; };
+		FAC1C5312BC5290C005A788E /* RefundDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefundDto.swift; sourceTree = "<group>"; };
+		FAC1C5332BC52CE5005A788E /* BranchPaymentMethodDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchPaymentMethodDto.swift; sourceTree = "<group>"; };
+		FAC1C5352BC52CED005A788E /* BranchPaymentMethodFeeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchPaymentMethodFeeDto.swift; sourceTree = "<group>"; };
+		FAC1C5372BC53236005A788E /* CompanyDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDto.swift; sourceTree = "<group>"; };
+		FAC1C5392BC5323F005A788E /* CompanyBranchDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyBranchDto.swift; sourceTree = "<group>"; };
+		FAC1C53C2BC539B1005A788E /* OrderGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderGroup.swift; sourceTree = "<group>"; };
+		FAC1C53E2BC539B8005A788E /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		FAC1C5402BC539C1005A788E /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		FAC1C5422BC539CE005A788E /* ProductCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
+		FAC1C5442BC539D5005A788E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FAC1C5462BC539DB005A788E /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
+		FAC1C5492BC53A03005A788E /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		FAC1C54B2BC53A0A005A788E /* TransactionFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFee.swift; sourceTree = "<group>"; };
+		FAC1C54D2BC53A15005A788E /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		FAC1C54F2BC53A1D005A788E /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		FAC1C5512BC53A25005A788E /* PaymentMethodFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodFee.swift; sourceTree = "<group>"; };
+		FAC1C5532BC53A2D005A788E /* Branch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
+		FAC1C5552BC53A37005A788E /* BranchPaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchPaymentMethod.swift; sourceTree = "<group>"; };
+		FAC1C5572BC53A3F005A788E /* BranchPaymentMethodFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchPaymentMethodFee.swift; sourceTree = "<group>"; };
+		FAC1C5592BC53A58005A788E /* EmployeeShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeShift.swift; sourceTree = "<group>"; };
+		FAC1C55B2BC53A5F005A788E /* LogAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogAdd.swift; sourceTree = "<group>"; };
+		FAC1C55D2BC53A65005A788E /* LogUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUpdate.swift; sourceTree = "<group>"; };
+		FAC1C55F2BC53A6C005A788E /* LogDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDelete.swift; sourceTree = "<group>"; };
+		FAC1C5612BC53A77005A788E /* LogSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSell.swift; sourceTree = "<group>"; };
+		FAC1C5632BC53A7E005A788E /* LogRestock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRestock.swift; sourceTree = "<group>"; };
+		FAC1C5652BC53B37005A788E /* OrderDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDiscount.swift; sourceTree = "<group>"; };
+		FAC1C5672BC53B3F005A788E /* OrderTax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTax.swift; sourceTree = "<group>"; };
+		FAC1C56A2BC53C8E005A788E /* OrderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepository.swift; sourceTree = "<group>"; };
+		FAC4C3642BCEE0AB00E01596 /* CompanySearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanySearchViewModel.swift; sourceTree = "<group>"; };
+		FAC4C3692BCEE5D200E01596 /* BranchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchRepository.swift; sourceTree = "<group>"; };
+		FAC4C36C2BCEE63700E01596 /* FirebaseBranchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseBranchRepository.swift; sourceTree = "<group>"; };
+		FAD20F7C2B6A6048009880A3 /* invence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = invence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD20F7F2B6A6048009880A3 /* InvenceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvenceApp.swift; sourceTree = "<group>"; };
+		FAD20F812B6A6048009880A3 /* RootNavGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavGraph.swift; sourceTree = "<group>"; };
+		FAD20F832B6A6049009880A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAD20F862B6A6049009880A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAD20F8C2B6A6049009880A3 /* invenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = invenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD20F902B6A6049009880A3 /* invenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invenceTests.swift; sourceTree = "<group>"; };
+		FAD20F962B6A6049009880A3 /* invenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = invenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD20F9A2B6A6049009880A3 /* invenceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invenceUITests.swift; sourceTree = "<group>"; };
+		FAD20F9C2B6A6049009880A3 /* invenceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invenceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAE9B6482BCC363C0070D50F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAE9B64A2BCC38160070D50F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FAEAEFED2BC65C7400843567 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		FAEAEFEF2BC65C7F00843567 /* CompanyBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyBranch.swift; sourceTree = "<group>"; };
+		FAEAEFF12BC65D3F00843567 /* Refund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refund.swift; sourceTree = "<group>"; };
+		FAFCF68C2BC7B1470064CD4E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FAFCF68F2BC7B2910064CD4E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FAFCF6922BC7B33B0064CD4E /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		FAFCF6952BC7C0F90064CD4E /* CompanySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanySearchView.swift; sourceTree = "<group>"; };
+		FAFCF6972BC7C1020064CD4E /* CompanyOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyOnboardingView.swift; sourceTree = "<group>"; };
+		FAFCF69A2BC7D97A0064CD4E /* InvencePrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvencePrimaryButton.swift; sourceTree = "<group>"; };
+		FAFCF69C2BC7DB710064CD4E /* InvenceSecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvenceSecondaryButton.swift; sourceTree = "<group>"; };
+		FAFCF69E2BC818880064CD4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FDCEA8F4D2E2B868E9D165D3 /* Pods-invence-invenceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-invence-invenceUITests.debug.xcconfig"; path = "Target Support Files/Pods-invence-invenceUITests/Pods-invence-invenceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAD20F792B6A6048009880A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54EDAC3BE0902F0FF3389281 /* Pods_invence.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD20F892B6A6049009880A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B688450463DB98227E0595 /* Pods_invenceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD20F932B6A6049009880A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC5C6E6220936355395E6F2 /* Pods_invence_invenceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF646D3139D7E5161F3B861F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86035883E5A40897519D153A /* Pods_invence.framework */,
+				6C7CF6EF773119615DDA1EFD /* Pods_invence_invenceUITests.framework */,
+				59554183DEB24942EF16C780 /* Pods_invenceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E01AE3574015E5ED87E0B699 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D6D4C2F667BD7FED7EC8DE5 /* Pods-invence.debug.xcconfig */,
+				924D605339997AB85DC8F001 /* Pods-invence.release.xcconfig */,
+				FDCEA8F4D2E2B868E9D165D3 /* Pods-invence-invenceUITests.debug.xcconfig */,
+				538224AC826AE6D079B52A58 /* Pods-invence-invenceUITests.release.xcconfig */,
+				0522169BA3B0B8DC117B85AC /* Pods-invenceTests.debug.xcconfig */,
+				BBC8B8E00E0D1DAC071FB5C6 /* Pods-invenceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA29313F2BC44B4B00C68BF2 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5072BC52225005A788E /* order */,
+				FA2931502BC4536700C68BF2 /* user */,
+				FA29314F2BC4536200C68BF2 /* product */,
+				FA29314E2BC4535D00C68BF2 /* transaction */,
+				FA29314D2BC4535900C68BF2 /* branch */,
+				FA29314B2BC4535100C68BF2 /* log */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		FA2931402BC44B5700C68BF2 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5062BC52220005A788E /* order */,
+				FA2931472BC44C0400C68BF2 /* log */,
+				FA2931452BC44BE900C68BF2 /* branch */,
+				FA2931442BC44BAC00C68BF2 /* transaction */,
+				FA2931432BC44B9B00C68BF2 /* product */,
+				FA2931422BC44B8700C68BF2 /* user */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		FA2931412BC44B5E00C68BF2 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FAD20F7F2B6A6048009880A3 /* InvenceApp.swift */,
+				FAD20F812B6A6048009880A3 /* RootNavGraph.swift */,
+				FAFCF6992BC7D96C0064CD4E /* component */,
+				FAEAEFF42BC65E8100843567 /* navigation */,
+				FAEAEFF32BC65E7200843567 /* view */,
+				FA7D09052BCD371E0057ED3E /* AppViewModel.swift */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		FA2931422BC44B8700C68BF2 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5262BC52873005A788E /* repository */,
+				FA2931482BC44C2300C68BF2 /* model */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		FA2931432BC44B9B00C68BF2 /* product */ = {
+			isa = PBXGroup;
+			children = (
+				FA2931592BC4546E00C68BF2 /* model */,
+			);
+			path = product;
+			sourceTree = "<group>";
+		};
+		FA2931442BC44BAC00C68BF2 /* transaction */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5012BC521C7005A788E /* model */,
+			);
+			path = transaction;
+			sourceTree = "<group>";
+		};
+		FA2931452BC44BE900C68BF2 /* branch */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4C36B2BCEE62E00E01596 /* repository */,
+				FAC1C5252BC527FA005A788E /* model */,
+			);
+			path = branch;
+			sourceTree = "<group>";
+		};
+		FA2931472BC44C0400C68BF2 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5132BC52752005A788E /* model */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		FA2931482BC44C2300C68BF2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5202BC527E0005A788E /* EmployeeShiftDto.swift */,
+				FA2931492BC44C3B00C68BF2 /* UserDto.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FA29314B2BC4535100C68BF2 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D091A2BCD852C0057ED3E /* usecase */,
+				FA7D09192BCD85240057ED3E /* repository */,
+				FA7D09182BCD85200057ED3E /* model */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		FA29314D2BC4535900C68BF2 /* branch */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4C3682BCEE5C200E01596 /* repository */,
+				FAC4C3672BCEE5B400E01596 /* usecase */,
+				FAC4C3662BCEE5B000E01596 /* model */,
+				FAC1C5532BC53A2D005A788E /* Branch.swift */,
+				FAC1C5552BC53A37005A788E /* BranchPaymentMethod.swift */,
+				FAC1C5572BC53A3F005A788E /* BranchPaymentMethodFee.swift */,
+				FAEAEFED2BC65C7400843567 /* Company.swift */,
+				FAEAEFEF2BC65C7F00843567 /* CompanyBranch.swift */,
+			);
+			path = branch;
+			sourceTree = "<group>";
+		};
+		FA29314E2BC4535D00C68BF2 /* transaction */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D09212BCD86C00057ED3E /* usecase */,
+				FA7D09202BCD86AF0057ED3E /* model */,
+				FA7D091F2BCD86A90057ED3E /* repository */,
+			);
+			path = transaction;
+			sourceTree = "<group>";
+		};
+		FA29314F2BC4536200C68BF2 /* product */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5422BC539CE005A788E /* ProductCategory.swift */,
+				FAC1C5442BC539D5005A788E /* Product.swift */,
+				FAC1C5462BC539DB005A788E /* ProductItem.swift */,
+			);
+			path = product;
+			sourceTree = "<group>";
+		};
+		FA2931502BC4536700C68BF2 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D09012BCD121E0057ED3E /* usecase */,
+				FA2931542BC453D000C68BF2 /* repository */,
+				FA2931512BC4537200C68BF2 /* model */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		FA2931512BC4537200C68BF2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FA2931522BC4537D00C68BF2 /* User.swift */,
+				FAC1C5592BC53A58005A788E /* EmployeeShift.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FA2931542BC453D000C68BF2 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				FA2931572BC453E800C68BF2 /* UserRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		FA2931592BC4546E00C68BF2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FA29315A2BC4547C00C68BF2 /* ProductCategoryDto.swift */,
+				FA29315E2BC4549300C68BF2 /* ProductDto.swift */,
+				FA2931602BC4549A00C68BF2 /* ProductItemDto.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FA7D08FB2BCCF4080057ED3E /* util */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D08FC2BCCF4180057ED3E /* ViewUtils.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		FA7D08FE2BCCFA780057ED3E /* firebase */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D08FF2BCCFA930057ED3E /* FirebaseAuthenticationManager.swift */,
+				FA9D5B0A2BCF9B44002DEFAA /* FirestoreConfig.swift */,
+				FA9D5B112BCFB4BB002DEFAA /* FirestoreError.swift */,
+				FA9D5B1F2BCFD345002DEFAA /* CodableFirebaseExtensions.swift */,
+			);
+			path = firebase;
+			sourceTree = "<group>";
+		};
+		FA7D09012BCD121E0057ED3E /* usecase */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D09032BCD12310057ED3E /* ObserveUserUseCase.swift */,
+				FA9D5B132BCFB5ED002DEFAA /* UpsertUserUseCase.swift */,
+				FA9D5B192BCFC125002DEFAA /* ObserveUserBranchUseCase.swift */,
+			);
+			path = usecase;
+			sourceTree = "<group>";
+		};
+		FA7D09072BCD718C0057ED3E /* injector */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D090F2BCD71D60057ED3E /* feature */,
+				FA7D09082BCD71970057ED3E /* Dependency.swift */,
+				FA7D090A2BCD71B50057ED3E /* DependencyContainer.swift */,
+				FA7D090D2BCD71CE0057ED3E /* FeatureInjector.swift */,
+			);
+			path = injector;
+			sourceTree = "<group>";
+		};
+		FA7D090F2BCD71D60057ED3E /* feature */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D09102BCD71DF0057ED3E /* ContentInjector.swift */,
+			);
+			path = feature;
+			sourceTree = "<group>";
+		};
+		FA7D09182BCD85200057ED3E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C55B2BC53A5F005A788E /* LogAdd.swift */,
+				FAC1C55D2BC53A65005A788E /* LogUpdate.swift */,
+				FAC1C55F2BC53A6C005A788E /* LogDelete.swift */,
+				FAC1C5612BC53A77005A788E /* LogSell.swift */,
+				FAC1C5632BC53A7E005A788E /* LogRestock.swift */,
+				FA7D091B2BCD85CD0057ED3E /* Log.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FA7D09192BCD85240057ED3E /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D09142BCD83D60057ED3E /* LogRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		FA7D091A2BCD852C0057ED3E /* usecase */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D09162BCD83EB0057ED3E /* ObserveLogUseCase.swift */,
+			);
+			path = usecase;
+			sourceTree = "<group>";
+		};
+		FA7D091F2BCD86A90057ED3E /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D091D2BCD86A60057ED3E /* TransactionRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		FA7D09202BCD86AF0057ED3E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5492BC53A03005A788E /* Transaction.swift */,
+				FAC1C54B2BC53A0A005A788E /* TransactionFee.swift */,
+				FAC1C54D2BC53A15005A788E /* Payment.swift */,
+				FAC1C54F2BC53A1D005A788E /* PaymentMethod.swift */,
+				FAC1C5512BC53A25005A788E /* PaymentMethodFee.swift */,
+				FAEAEFF12BC65D3F00843567 /* Refund.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FA7D09212BCD86C00057ED3E /* usecase */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D09222BCD86D10057ED3E /* ObserveTransactionUseCase.swift */,
+			);
+			path = usecase;
+			sourceTree = "<group>";
+		};
+		FA9D5B152BCFBBC9002DEFAA /* search */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCF6952BC7C0F90064CD4E /* CompanySearchView.swift */,
+				FAC4C3642BCEE0AB00E01596 /* CompanySearchViewModel.swift */,
+				FA9D5B172BCFBBED002DEFAA /* SelectBranchSheet.swift */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		FA9D5B162BCFBBD8002DEFAA /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCF6972BC7C1020064CD4E /* CompanyOnboardingView.swift */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		FAC1C5012BC521C7005A788E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5042BC521E9005A788E /* TransactionDto.swift */,
+				FAC1C5292BC528DC005A788E /* PaymentDto.swift */,
+				FAC1C52B2BC528F0005A788E /* PaymentMethodDto.swift */,
+				FAC1C52D2BC528F9005A788E /* PaymentMethodFeeDto.swift */,
+				FAC1C52F2BC52903005A788E /* TransactionFeeDto.swift */,
+				FAC1C5312BC5290C005A788E /* RefundDto.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FAC1C5062BC52220005A788E /* order */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5082BC5222B005A788E /* model */,
+			);
+			path = order;
+			sourceTree = "<group>";
+		};
+		FAC1C5072BC52225005A788E /* order */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5692BC53C85005A788E /* repository */,
+				FAC1C53B2BC539A2005A788E /* model */,
+			);
+			path = order;
+			sourceTree = "<group>";
+		};
+		FAC1C5082BC5222B005A788E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5092BC5223A005A788E /* OrderGroupDto.swift */,
+				FAC1C50B2BC52243005A788E /* OrderDto.swift */,
+				FAC1C50D2BC5225C005A788E /* OrderItemDto.swift */,
+				FAC1C50F2BC52477005A788E /* OrderDiscountDto.swift */,
+				FAC1C5112BC52480005A788E /* OrderTaxDto.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FAC1C5132BC52752005A788E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5162BC52799005A788E /* LogAddDto.swift */,
+				FAC1C5182BC527A5005A788E /* LogUpdateDto.swift */,
+				FAC1C51A2BC527B4005A788E /* LogDeleteDto.swift */,
+				FAC1C51C2BC527C3005A788E /* LogSellDto.swift */,
+				FAC1C51E2BC527CC005A788E /* LogRestockDto.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FAC1C5252BC527FA005A788E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5222BC527E9005A788E /* BranchDto.swift */,
+				FAC1C5332BC52CE5005A788E /* BranchPaymentMethodDto.swift */,
+				FAC1C5352BC52CED005A788E /* BranchPaymentMethodFeeDto.swift */,
+				FAC1C5372BC53236005A788E /* CompanyDto.swift */,
+				FAC1C5392BC5323F005A788E /* CompanyBranchDto.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FAC1C5262BC52873005A788E /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C5272BC52882005A788E /* FirebaseUserRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		FAC1C53B2BC539A2005A788E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C53C2BC539B1005A788E /* OrderGroup.swift */,
+				FAC1C53E2BC539B8005A788E /* Order.swift */,
+				FAC1C5402BC539C1005A788E /* OrderItem.swift */,
+				FAC1C5652BC53B37005A788E /* OrderDiscount.swift */,
+				FAC1C5672BC53B3F005A788E /* OrderTax.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FAC1C5692BC53C85005A788E /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1C56A2BC53C8E005A788E /* OrderRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		FAC4C3662BCEE5B000E01596 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FAC4C3672BCEE5B400E01596 /* usecase */ = {
+			isa = PBXGroup;
+			children = (
+				FA9D5B0F2BCFA9EC002DEFAA /* ObserveCompanyUseCase.swift */,
+			);
+			path = usecase;
+			sourceTree = "<group>";
+		};
+		FAC4C3682BCEE5C200E01596 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4C3692BCEE5D200E01596 /* BranchRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		FAC4C36B2BCEE62E00E01596 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4C36C2BCEE63700E01596 /* FirebaseBranchRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		FAD20F732B6A6048009880A3 = {
+			isa = PBXGroup;
+			children = (
+				FAD20F7E2B6A6048009880A3 /* invence */,
+				FAD20F8F2B6A6049009880A3 /* invenceTests */,
+				FAD20F992B6A6049009880A3 /* invenceUITests */,
+				FAD20F7D2B6A6048009880A3 /* Products */,
+				E01AE3574015E5ED87E0B699 /* Pods */,
+				BF646D3139D7E5161F3B861F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAD20F7D2B6A6048009880A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAD20F7C2B6A6048009880A3 /* invence.app */,
+				FAD20F8C2B6A6049009880A3 /* invenceTests.xctest */,
+				FAD20F962B6A6049009880A3 /* invenceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAD20F7E2B6A6048009880A3 /* invence */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D09072BCD718C0057ED3E /* injector */,
+				FA7D08FE2BCCFA780057ED3E /* firebase */,
+				FA7D08FB2BCCF4080057ED3E /* util */,
+				FA7D08FA2BCCF08E0057ED3E /* Info.plist */,
+				FAFCF69E2BC818880064CD4E /* GoogleService-Info.plist */,
+				FA2931412BC44B5E00C68BF2 /* presentation */,
+				FA2931402BC44B5700C68BF2 /* data */,
+				FA29313F2BC44B4B00C68BF2 /* domain */,
+				FAD20F832B6A6049009880A3 /* Assets.xcassets */,
+				FAD20F852B6A6049009880A3 /* Preview Content */,
+				FAE9B6482BCC363C0070D50F /* AppDelegate.swift */,
+			);
+			path = invence;
+			sourceTree = "<group>";
+		};
+		FAD20F852B6A6049009880A3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FAD20F862B6A6049009880A3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAD20F8F2B6A6049009880A3 /* invenceTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD20F902B6A6049009880A3 /* invenceTests.swift */,
+			);
+			path = invenceTests;
+			sourceTree = "<group>";
+		};
+		FAD20F992B6A6049009880A3 /* invenceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD20F9A2B6A6049009880A3 /* invenceUITests.swift */,
+				FAD20F9C2B6A6049009880A3 /* invenceUITestsLaunchTests.swift */,
+			);
+			path = invenceUITests;
+			sourceTree = "<group>";
+		};
+		FAEAEFF32BC65E7200843567 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCF6942BC7C0ED0064CD4E /* company */,
+				FAFCF6912BC7B3290064CD4E /* inventory */,
+				FAFCF68E2BC7B2880064CD4E /* login */,
+				FAFCF68B2BC7B1380064CD4E /* home */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FAEAEFF42BC65E8100843567 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = navigation;
+			sourceTree = "<group>";
+		};
+		FAFCF68B2BC7B1380064CD4E /* home */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCF68C2BC7B1470064CD4E /* HomeView.swift */,
+				FA7D09122BCD831B0057ED3E /* HomeViewModel.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		FAFCF68E2BC7B2880064CD4E /* login */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCF68F2BC7B2910064CD4E /* LoginView.swift */,
+				FAE9B64A2BCC38160070D50F /* LoginViewModel.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		FAFCF6912BC7B3290064CD4E /* inventory */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCF6922BC7B33B0064CD4E /* InventoryView.swift */,
+			);
+			path = inventory;
+			sourceTree = "<group>";
+		};
+		FAFCF6942BC7C0ED0064CD4E /* company */ = {
+			isa = PBXGroup;
+			children = (
+				FA9D5B162BCFBBD8002DEFAA /* onboarding */,
+				FA9D5B152BCFBBC9002DEFAA /* search */,
+			);
+			path = company;
+			sourceTree = "<group>";
+		};
+		FAFCF6992BC7D96C0064CD4E /* component */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCF69A2BC7D97A0064CD4E /* InvencePrimaryButton.swift */,
+				FAFCF69C2BC7DB710064CD4E /* InvenceSecondaryButton.swift */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAD20F7B2B6A6048009880A3 /* invence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD20FA02B6A6049009880A3 /* Build configuration list for PBXNativeTarget "invence" */;
+			buildPhases = (
+				8FFE18C806ADEA58827FF2A0 /* [CP] Check Pods Manifest.lock */,
+				FAD20F782B6A6048009880A3 /* Sources */,
+				FAD20F792B6A6048009880A3 /* Frameworks */,
+				FAD20F7A2B6A6048009880A3 /* Resources */,
+				C1DDD3EC6CEAAF6EE231E69E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = invence;
+			productName = invence;
+			productReference = FAD20F7C2B6A6048009880A3 /* invence.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAD20F8B2B6A6049009880A3 /* invenceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD20FA32B6A6049009880A3 /* Build configuration list for PBXNativeTarget "invenceTests" */;
+			buildPhases = (
+				20E73E01B590DEB970257294 /* [CP] Check Pods Manifest.lock */,
+				FAD20F882B6A6049009880A3 /* Sources */,
+				FAD20F892B6A6049009880A3 /* Frameworks */,
+				FAD20F8A2B6A6049009880A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD20F8E2B6A6049009880A3 /* PBXTargetDependency */,
+			);
+			name = invenceTests;
+			productName = invenceTests;
+			productReference = FAD20F8C2B6A6049009880A3 /* invenceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAD20F952B6A6049009880A3 /* invenceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD20FA62B6A6049009880A3 /* Build configuration list for PBXNativeTarget "invenceUITests" */;
+			buildPhases = (
+				1FB1838160075C60F69BF1D5 /* [CP] Check Pods Manifest.lock */,
+				FAD20F922B6A6049009880A3 /* Sources */,
+				FAD20F932B6A6049009880A3 /* Frameworks */,
+				FAD20F942B6A6049009880A3 /* Resources */,
+				0C6E5C977BEF4182E8DD4EAC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD20F982B6A6049009880A3 /* PBXTargetDependency */,
+			);
+			name = invenceUITests;
+			productName = invenceUITests;
+			productReference = FAD20F962B6A6049009880A3 /* invenceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAD20F742B6A6048009880A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FAD20F7B2B6A6048009880A3 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					FAD20F8B2B6A6049009880A3 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FAD20F7B2B6A6048009880A3;
+					};
+					FAD20F952B6A6049009880A3 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FAD20F7B2B6A6048009880A3;
+					};
+				};
+			};
+			buildConfigurationList = FAD20F772B6A6048009880A3 /* Build configuration list for PBXProject "invence" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAD20F732B6A6048009880A3;
+			productRefGroup = FAD20F7D2B6A6048009880A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAD20F7B2B6A6048009880A3 /* invence */,
+				FAD20F8B2B6A6049009880A3 /* invenceTests */,
+				FAD20F952B6A6049009880A3 /* invenceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAD20F7A2B6A6048009880A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD20F872B6A6049009880A3 /* Preview Assets.xcassets in Resources */,
+				FAD20F842B6A6049009880A3 /* Assets.xcassets in Resources */,
+				FAFCF69F2BC818880064CD4E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD20F8A2B6A6049009880A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD20F942B6A6049009880A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C6E5C977BEF4182E8DD4EAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-invence-invenceUITests/Pods-invence-invenceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-invence-invenceUITests/Pods-invence-invenceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-invence-invenceUITests/Pods-invence-invenceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FB1838160075C60F69BF1D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-invence-invenceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20E73E01B590DEB970257294 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-invenceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FFE18C806ADEA58827FF2A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-invence-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DDD3EC6CEAAF6EE231E69E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-invence/Pods-invence-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-invence/Pods-invence-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-invence/Pods-invence-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAD20F782B6A6048009880A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7D09152BCD83D60057ED3E /* LogRepository.swift in Sources */,
+				FAC1C51D2BC527C3005A788E /* LogSellDto.swift in Sources */,
+				FA7D091C2BCD85CD0057ED3E /* Log.swift in Sources */,
+				FA2931532BC4537D00C68BF2 /* User.swift in Sources */,
+				FA7D090E2BCD71CE0057ED3E /* FeatureInjector.swift in Sources */,
+				FA9D5B202BCFD345002DEFAA /* CodableFirebaseExtensions.swift in Sources */,
+				FA29315F2BC4549300C68BF2 /* ProductDto.swift in Sources */,
+				FAC1C5052BC521E9005A788E /* TransactionDto.swift in Sources */,
+				FAC1C5682BC53B3F005A788E /* OrderTax.swift in Sources */,
+				FAC1C52E2BC528F9005A788E /* PaymentMethodFeeDto.swift in Sources */,
+				FA7D09002BCCFA930057ED3E /* FirebaseAuthenticationManager.swift in Sources */,
+				FA7D09042BCD12310057ED3E /* ObserveUserUseCase.swift in Sources */,
+				FA9D5B182BCFBBED002DEFAA /* SelectBranchSheet.swift in Sources */,
+				FAC1C50E2BC5225C005A788E /* OrderItemDto.swift in Sources */,
+				FAC1C5232BC527E9005A788E /* BranchDto.swift in Sources */,
+				FAE9B6492BCC363C0070D50F /* AppDelegate.swift in Sources */,
+				FA29315B2BC4547C00C68BF2 /* ProductCategoryDto.swift in Sources */,
+				FAD20F822B6A6048009880A3 /* RootNavGraph.swift in Sources */,
+				FAC1C5562BC53A37005A788E /* BranchPaymentMethod.swift in Sources */,
+				FA9D5B0B2BCF9B44002DEFAA /* FirestoreConfig.swift in Sources */,
+				FAC1C5102BC52477005A788E /* OrderDiscountDto.swift in Sources */,
+				FAC1C50C2BC52243005A788E /* OrderDto.swift in Sources */,
+				FAC1C5382BC53236005A788E /* CompanyDto.swift in Sources */,
+				FAC1C5642BC53A7E005A788E /* LogRestock.swift in Sources */,
+				FAC1C51B2BC527B4005A788E /* LogDeleteDto.swift in Sources */,
+				FAC1C5542BC53A2D005A788E /* Branch.swift in Sources */,
+				FAD20F802B6A6048009880A3 /* InvenceApp.swift in Sources */,
+				FAEAEFEE2BC65C7400843567 /* Company.swift in Sources */,
+				FAE9B64B2BCC38160070D50F /* LoginViewModel.swift in Sources */,
+				FA7D08FD2BCCF4180057ED3E /* ViewUtils.swift in Sources */,
+				FAC1C54E2BC53A15005A788E /* Payment.swift in Sources */,
+				FAC4C36D2BCEE63700E01596 /* FirebaseBranchRepository.swift in Sources */,
+				FA9D5B122BCFB4BB002DEFAA /* FirestoreError.swift in Sources */,
+				FAC1C54C2BC53A0A005A788E /* TransactionFee.swift in Sources */,
+				FA9D5B1A2BCFC125002DEFAA /* ObserveUserBranchUseCase.swift in Sources */,
+				FAC1C5622BC53A77005A788E /* LogSell.swift in Sources */,
+				FA7D09132BCD831B0057ED3E /* HomeViewModel.swift in Sources */,
+				FAC1C5192BC527A5005A788E /* LogUpdateDto.swift in Sources */,
+				FAC1C53F2BC539B8005A788E /* Order.swift in Sources */,
+				FAC1C5602BC53A6C005A788E /* LogDelete.swift in Sources */,
+				FA7D09062BCD371E0057ED3E /* AppViewModel.swift in Sources */,
+				FAC1C5522BC53A25005A788E /* PaymentMethodFee.swift in Sources */,
+				FAC1C51F2BC527CC005A788E /* LogRestockDto.swift in Sources */,
+				FAC1C55A2BC53A58005A788E /* EmployeeShift.swift in Sources */,
+				FAC1C55C2BC53A5F005A788E /* LogAdd.swift in Sources */,
+				FA2931582BC453E800C68BF2 /* UserRepository.swift in Sources */,
+				FAC1C52C2BC528F0005A788E /* PaymentMethodDto.swift in Sources */,
+				FAFCF69B2BC7D97A0064CD4E /* InvencePrimaryButton.swift in Sources */,
+				FAC1C5502BC53A1D005A788E /* PaymentMethod.swift in Sources */,
+				FAC1C5452BC539D5005A788E /* Product.swift in Sources */,
+				FA7D09112BCD71DF0057ED3E /* ContentInjector.swift in Sources */,
+				FAC1C5302BC52903005A788E /* TransactionFeeDto.swift in Sources */,
+				FAFCF69D2BC7DB710064CD4E /* InvenceSecondaryButton.swift in Sources */,
+				FA7D09232BCD86D10057ED3E /* ObserveTransactionUseCase.swift in Sources */,
+				FAC1C52A2BC528DC005A788E /* PaymentDto.swift in Sources */,
+				FAEAEFF02BC65C7F00843567 /* CompanyBranch.swift in Sources */,
+				FAC1C56B2BC53C8E005A788E /* OrderRepository.swift in Sources */,
+				FA7D09172BCD83EB0057ED3E /* ObserveLogUseCase.swift in Sources */,
+				FAC1C53D2BC539B1005A788E /* OrderGroup.swift in Sources */,
+				FAFCF68D2BC7B1470064CD4E /* HomeView.swift in Sources */,
+				FAFCF6982BC7C1020064CD4E /* CompanyOnboardingView.swift in Sources */,
+				FAC1C55E2BC53A65005A788E /* LogUpdate.swift in Sources */,
+				FA7D091E2BCD86A60057ED3E /* TransactionRepository.swift in Sources */,
+				FAC1C5212BC527E0005A788E /* EmployeeShiftDto.swift in Sources */,
+				FAC1C5322BC5290C005A788E /* RefundDto.swift in Sources */,
+				FAFCF6962BC7C0F90064CD4E /* CompanySearchView.swift in Sources */,
+				FAFCF6902BC7B2910064CD4E /* LoginView.swift in Sources */,
+				FAC1C5472BC539DB005A788E /* ProductItem.swift in Sources */,
+				FAEAEFF22BC65D3F00843567 /* Refund.swift in Sources */,
+				FAC4C3652BCEE0AB00E01596 /* CompanySearchViewModel.swift in Sources */,
+				FAC1C5172BC52799005A788E /* LogAddDto.swift in Sources */,
+				FA7D09092BCD71980057ED3E /* Dependency.swift in Sources */,
+				FAC1C5122BC52480005A788E /* OrderTaxDto.swift in Sources */,
+				FAC1C5342BC52CE5005A788E /* BranchPaymentMethodDto.swift in Sources */,
+				FA2931612BC4549A00C68BF2 /* ProductItemDto.swift in Sources */,
+				FAC1C54A2BC53A03005A788E /* Transaction.swift in Sources */,
+				FAC1C50A2BC5223A005A788E /* OrderGroupDto.swift in Sources */,
+				FAFCF6932BC7B33B0064CD4E /* InventoryView.swift in Sources */,
+				FAC1C5582BC53A3F005A788E /* BranchPaymentMethodFee.swift in Sources */,
+				FAC4C36A2BCEE5D200E01596 /* BranchRepository.swift in Sources */,
+				FA9D5B142BCFB5ED002DEFAA /* UpsertUserUseCase.swift in Sources */,
+				FAC1C5362BC52CED005A788E /* BranchPaymentMethodFeeDto.swift in Sources */,
+				FA29314A2BC44C3B00C68BF2 /* UserDto.swift in Sources */,
+				FAC1C5662BC53B37005A788E /* OrderDiscount.swift in Sources */,
+				FAC1C5432BC539CE005A788E /* ProductCategory.swift in Sources */,
+				FAC1C5282BC52882005A788E /* FirebaseUserRepository.swift in Sources */,
+				FAC1C53A2BC5323F005A788E /* CompanyBranchDto.swift in Sources */,
+				FA7D090B2BCD71B50057ED3E /* DependencyContainer.swift in Sources */,
+				FAC1C5412BC539C1005A788E /* OrderItem.swift in Sources */,
+				FA9D5B102BCFA9EC002DEFAA /* ObserveCompanyUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD20F882B6A6049009880A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD20F912B6A6049009880A3 /* invenceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD20F922B6A6049009880A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD20F9B2B6A6049009880A3 /* invenceUITests.swift in Sources */,
+				FAD20F9D2B6A6049009880A3 /* invenceUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAD20F8E2B6A6049009880A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD20F7B2B6A6048009880A3 /* invence */;
+			targetProxy = FAD20F8D2B6A6049009880A3 /* PBXContainerItemProxy */;
+		};
+		FAD20F982B6A6049009880A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD20F7B2B6A6048009880A3 /* invence */;
+			targetProxy = FAD20F972B6A6049009880A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FAD20F9E2B6A6049009880A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAD20F9F2B6A6049009880A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAD20FA12B6A6049009880A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D6D4C2F667BD7FED7EC8DE5 /* Pods-invence.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"invence/Preview Content\"";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = invence/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lexwilliam.invence;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAD20FA22B6A6049009880A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924D605339997AB85DC8F001 /* Pods-invence.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"invence/Preview Content\"";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = invence/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lexwilliam.invence;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAD20FA42B6A6049009880A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0522169BA3B0B8DC117B85AC /* Pods-invenceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lexwilliam.invenceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/invence.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/invence";
+			};
+			name = Debug;
+		};
+		FAD20FA52B6A6049009880A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC8B8E00E0D1DAC071FB5C6 /* Pods-invenceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lexwilliam.invenceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/invence.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/invence";
+			};
+			name = Release;
+		};
+		FAD20FA72B6A6049009880A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDCEA8F4D2E2B868E9D165D3 /* Pods-invence-invenceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lexwilliam.invenceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = invence;
+			};
+			name = Debug;
+		};
+		FAD20FA82B6A6049009880A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538224AC826AE6D079B52A58 /* Pods-invence-invenceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lexwilliam.invenceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = invence;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAD20F772B6A6048009880A3 /* Build configuration list for PBXProject "invence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD20F9E2B6A6049009880A3 /* Debug */,
+				FAD20F9F2B6A6049009880A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD20FA02B6A6049009880A3 /* Build configuration list for PBXNativeTarget "invence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD20FA12B6A6049009880A3 /* Debug */,
+				FAD20FA22B6A6049009880A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD20FA32B6A6049009880A3 /* Build configuration list for PBXNativeTarget "invenceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD20FA42B6A6049009880A3 /* Debug */,
+				FAD20FA52B6A6049009880A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD20FA62B6A6049009880A3 /* Build configuration list for PBXNativeTarget "invenceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD20FA72B6A6049009880A3 /* Debug */,
+				FAD20FA82B6A6049009880A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAD20F742B6A6048009880A3 /* Project object */;
+}

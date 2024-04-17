@@ -1,0 +1,6 @@
+framework module Pods_invenceTests {
+  umbrella header "Pods-invenceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
